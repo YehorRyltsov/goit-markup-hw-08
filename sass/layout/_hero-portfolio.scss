@@ -1,5 +1,13 @@
-.hero-portfolio {
-  padding-bottom: 94px;
+.herop {
+  .container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.hero-button-p {
+  display: flex;
+  justify-content: center;
   background: #ffffff;
 }
 .herop-list {
@@ -46,8 +54,7 @@
 .hero-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 1200px;
+  max-width: 100%;
 }
 .hero-portfolio-item:not(:last-child) {
   margin-right: 30px;

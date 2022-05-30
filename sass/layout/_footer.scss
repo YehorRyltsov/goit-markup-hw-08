@@ -1,7 +1,9 @@
 .footer {
   background-color: #2f303a;
   .container {
+    max-width: 1200px;
     display: flex;
+    align-items: center;
   }
 }
 .footer-box {

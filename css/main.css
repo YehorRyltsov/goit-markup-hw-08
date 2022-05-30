@@ -49,10 +49,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .backdrop {
@@ -261,6 +276,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .header .container {
+  max-width: 1200px;
   display: flex;
   align-items: center;
 }
@@ -407,7 +423,7 @@ body {
 }
 
 .hero-text {
-  width: 696px;
+  max-width: 696px;
   height: 120px;
   margin: 0 auto;
   padding-top: 200px;
@@ -465,19 +481,47 @@ body {
 }
 
 .about {
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about-list {
-  display: flex;
+  margin-bottom: -30px;
 }
-
-.about-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    width: 100%;
+  }
 }
 
 .about-list__item {
-  width: 270px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about-list__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list__item {
+    width: calc(25% - 30px);
+  }
 }
 
 .about-list__title {
@@ -486,7 +530,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-color);
+  margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .about-list__title {
+    text-align: start;
+  }
 }
 
 .about-list__text {
@@ -498,16 +549,18 @@ body {
 
 .about-list__svg {
   background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
+  width: 100%;
   border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  justify-content: center;
   cursor: pointer;
 }
-
-.about-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200) {
+  .about-list__svg {
+    height: 120px;
+  }
 }
 
 .hiw {
@@ -556,14 +609,30 @@ body {
 
 .comand {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200) {
+  .comand {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .comand-list {
-  display: flex;
-  justify-content: center;
-  margin-block-end: 0px;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .comand-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand-list {
+    width: 100%;
+  }
 }
 
 .comand-list__item:not(:last-child) {
@@ -574,6 +643,20 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .comand-list__item {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand-list__item {
+    width: calc(25% - 30px);
+  }
 }
 
 .comand-top__title {
@@ -587,6 +670,7 @@ body {
 
 .comand-list__img {
   padding-bottom: 30px;
+  max-width: 100%;
 }
 
 .comand-list__title {
@@ -613,6 +697,8 @@ body {
   margin-right: 32px;
   margin-left: 32px;
   margin-bottom: 30px;
+  padding-bottom: 24px;
+  justify-content: center;
 }
 
 .comand-list__icon:not(:last-child) {
@@ -700,7 +786,9 @@ body {
   background-color: #2f303a;
 }
 .footer .container {
+  max-width: 1200px;
   display: flex;
+  align-items: center;
 }
 
 .footer-box {
@@ -892,8 +980,15 @@ body {
   margin-left: 10px;
 }
 
-.hero-portfolio {
-  padding-bottom: 94px;
+.herop .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-button-p {
+  display: flex;
+  justify-content: center;
   background: #ffffff;
 }
 
@@ -940,8 +1035,7 @@ body {
 .hero-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  width: 1200px;
+  max-width: 100%;
 }
 
 .hero-portfolio-item:not(:last-child) {
