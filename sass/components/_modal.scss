@@ -64,17 +64,17 @@
   &:focus {
     border-color: #2196f3;
   }
-  &:focus + .modal-input-icon {
+  &:focus + .modal-input__icon {
     fill: #2196f3;
   }
   &:hover {
     border-color: #2196f3;
   }
-  &:hover + .modal-input-icon {
+  &:hover + .modal-input__icon {
     fill: #2196f3;
   }
 }
-.modal-input-icon {
+.modal-input__icon {
   position: absolute;
   fill: #212121;
   left: 15px;

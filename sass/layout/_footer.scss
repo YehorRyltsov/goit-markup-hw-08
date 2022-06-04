@@ -1,14 +1,27 @@
 .footer {
   background-color: #2f303a;
   .container {
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      display: flex;
+      // padding: 0 15px;
+    }
   }
 }
 .footer-box {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 .footer-box-logo {
   font-family: "Raleway", sans-serif;
@@ -76,9 +89,16 @@
   }
 }
 .footer-social {
-  margin-top: 72px;
-  margin-left: 70px;
-  margin-right: 93px;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 65px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 72px;
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 .footer-social__text {
   display: block;
@@ -92,6 +112,7 @@
 }
 .footer-social-block {
   display: flex;
+  justify-content: center;
 }
 .footer-social-block__icon:not(:last-child) {
   margin-right: 10px;
@@ -116,7 +137,21 @@
   }
 }
 .footer-subscribe {
-  margin-top: 72px;
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 72px;
+    display: flex;
+    max-width: 570px;
+    text-align: start;
+    padding: 0;
+  }
 }
 .footer-subscribe__lable {
   font-weight: 700;
@@ -130,9 +165,13 @@
 }
 .footer-subscribe-input-box {
   height: 50px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer-subscribe__input {
-  width: 358px;
+  width: 100%;
   height: 100%;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -140,11 +179,17 @@
   border-radius: 4px;
   padding: 15px;
   margin-right: 12px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .footer-subscribe-input-box-submit-btn {
   width: 200px;
   height: 100%;
+
+  margin-bottom: 60px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -153,6 +198,12 @@
   cursor: pointer;
   transition: background-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    margin-top: 20;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 
   &:hover {
     background: #188ce8;

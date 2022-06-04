@@ -15,9 +15,15 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  // margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__web {
@@ -28,25 +34,56 @@
 }
 
 .menu-list {
-  display: flex;
-  position: relative;
-  height: 100%;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: relative;
+    height: 100%;
+  }
 }
 .menu-list__item {
   margin-right: 50px;
 }
 
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
-.contacts__icon {
-  width: 16px;
-  height: 12px;
+.mail .contacts__icon {
   fill: #757575;
   margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.phone .contacts__icon {
+  fill: #757575;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
 .menu__link {
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -78,14 +115,20 @@
   border-radius: 2px;
 }
 .mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  margin-right: 30px;
-  transition: color 250ms, fill 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:focus .contacts__icon {
     fill: #2196f3;
@@ -97,7 +140,14 @@
 .contacts-list__link {
   transition: color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    // display: block;
+    padding-right: 30px;
+  }
   &:hover .mail {
     color: #2196f3;
   }
@@ -112,13 +162,20 @@
   }
 }
 .phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  transition: color 250ms, fill 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:focus .contacts__icon {
     fill: #2196f3;

@@ -21,7 +21,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="./index.html" class="logo heder__logo link"
           ><span lang="en" class="logo__web">Web</span
@@ -60,9 +60,9 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="overlay">
           <div class="container">
             <div class="text hero-text">
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="about">
         <div class="container">
           <ul class="about-list list">
@@ -133,61 +133,96 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="hiw">
+      <section class="hiw">
         <div class="container">
           <h2 class="hiw__title">Чем мы занимаемся</h2>
           <ul class="hiw-list list">
             <li class="hiw-list__item">
-              <img
-                src="./images/box1.jpg"
-                alt="процес роботи алгоритм"
-                width="370"
-                height="294"
-                class="hiw-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  src="./images/box1.jpg"
+                  alt="процес роботи алгоритм"
+                  class="hiw-list__img"
+                />
+              </picture>
+
               <div class="hiw-list-up__box">
                 <h3 class="hiw-list-up__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="hiw-list__item">
-              <img
-                src="./images/box2.jpg"
-                alt="процес роботи макет"
-                width="370"
-                height="294"
-                class="hiw-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/box2.jpg"
+                  alt="процес роботи макет"
+                  class="hiw-list__img"
+                />
+              </picture>
+
               <div class="hiw-list-up__box">
                 <h3 class="hiw-list-up__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="hiw-list__item">
-              <img
-                src="./images/box3.jpg"
-                alt="процес роботи дизайн"
-                width="370"
-                height="294"
-                class="hiw-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+
+                <img
+                  src="./images/box3.jpg"
+                  alt="процес роботи дизайн"
+                  class="hiw-list__img"
+                />
+              </picture>
               <div class="hiw-list-up__box">
                 <h3 class="hiw-list-up__title">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="comand">
         <div class="container">
           <h2 class="comand-top__title">Наша команда</h2>
           <ul class="comand-list list">
             <li class="comand-list__item">
-              <img
-                src="./images/photo1.jpg"
-                alt="Продукт дезайнер"
-                width="270"
-                height="260"
-                class="comand-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1-tab.jpg    1x,
+                    ./images/photo1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1-mob.jpg    1x,
+                    ./images/photo1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/photo1.jpg"
+                  alt="Продукт дезайнер"
+                  class="comand-list__img"
+                />
+              </picture>
+
               <div class="comand-list__item__text">
                 <h3 class="comand-list__title">Игорь Демьяненко</h3>
                 <p lang="en" class="comand-list__text">Product Designer</p>
@@ -236,13 +271,32 @@
               </div>
             </li>
             <li class="comand-list__item">
-              <img
-                src="./images/photo2.jpg"
-                alt="Розробник"
-                width="270"
-                height="260"
-                class="comand-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2-tab.jpg    1x,
+                    ./images/photo2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2-mob.jpg    1x,
+                    ./images/photo2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/photo2.jpg"
+                  alt="Розробник"
+                  class="comand-list__img"
+                />
+              </picture>
+
               <div class="comand-list__item__text">
                 <h3 class="comand-list__title">Ольга Репина</h3>
                 <p lang="en" class="comand-list__text">Frontend Developer</p>
@@ -291,13 +345,32 @@
               </div>
             </li>
             <li class="comand-list__item">
-              <img
-                src="./images/photo3.jpg"
-                alt="Маркетолог"
-                width="270"
-                height="260"
-                class="comand-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3-tab.jpg    1x,
+                    ./images/photo3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3-mob.jpg    1x,
+                    ./images/photo3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/photo3.jpg"
+                  alt="Маркетолог"
+                  class="comand-list__img"
+                />
+              </picture>
+
               <div class="comand-list__item__text">
                 <h3 class="comand-list__title">Николай Тарасов</h3>
                 <p lang="en" class="comand-list__text">Marketing</p>
@@ -346,13 +419,32 @@
               </div>
             </li>
             <li class="comand-list__item">
-              <img
-                src="./images/photo4.jpg"
-                alt="Дизайнер интерфейсов"
-                width="270"
-                height="260"
-                class="comand-list__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo4.jpg 1x, ./images/photo4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo4-tab.jpg    1x,
+                    ./images/photo4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo4-mob.jpg    1x,
+                    ./images/photo4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/photo4.jpg"
+                  alt="Дизайнер интерфейсов"
+                  class="comand-list__img"
+                />
+              </picture>
+
               <div class="comand-list__item__text">
                 <h3 class="comand-list__title">Михаил Ермаков</h3>
                 <p lang="en" class="comand-list__text">UI Designer</p>
@@ -403,8 +495,8 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="company">
-        <div class="company-box">
+      <section class="company">
+        <div class="company-box container">
           <h2 class="company__title">Постоянные клиенты</h2>
           <ul class="company-list list">
             <li class="company-list__item">
@@ -451,9 +543,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-box">
           <div class="footer-box-logo">
@@ -568,7 +660,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
