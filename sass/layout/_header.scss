@@ -6,6 +6,7 @@
     max-width: 1200px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 .heder__logo {
@@ -15,7 +16,6 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  // margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   @media screen and (min-width: 768px) {
@@ -55,6 +55,26 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
+  }
+}
+.mob-menu-btn {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: calc(100% - 50px);
+  background-color: #ffffff;
+  border-color: transparent;
+  fill: #212121;
+  cursor: pointer;
+
+  &:focus {
+    fill: #2196f3;
+  }
+  &:hover {
+    fill: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 .mail .contacts__icon {
@@ -141,11 +161,9 @@
   transition: color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
-    // display: flex;
     padding-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
-    // display: block;
     padding-right: 30px;
   }
   &:hover .mail {
@@ -183,4 +201,94 @@
   &:focus {
     color: #2196f3;
   }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+
+  .container {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+.mob-menu-close-btn {
+  position: absolute;
+  display: block;
+  left: calc(100% - 45px);
+
+  background-color: #ffffff;
+  border-color: transparent;
+  fill: #212121;
+  cursor: pointer;
+
+  &:focus {
+    fill: #2196f3;
+  }
+  &:hover {
+    fill: #2196f3;
+  }
+}
+.mob-menu-top {
+  padding-bottom: 274px;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 20px;
+}
+.mob-navigation {
+  margin-top: 40px;
+}
+.mob-menu-list__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-bottom: 32px;
+}
+.mob-contacts-list__link {
+  margin-bottom: 32px;
+}
+.mob-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.mob-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mob-list__block {
+  flex-wrap: wrap;
+  bottom: 0;
+  display: flex;
+  margin-bottom: 48px;
+  margin-top: 32px;
+}
+.mob-list__link {
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-align: center;
+}
+.no-scroll {
+  overflow: hidden;
 }
