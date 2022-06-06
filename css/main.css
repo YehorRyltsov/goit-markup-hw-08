@@ -1335,9 +1335,19 @@ body {
 }
 
 .herop .container {
-  max-width: 1200px;
+  max-width: 480px;
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .herop .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .herop .container {
+    max-width: 1200px;
+  }
 }
 
 .hero-button-p {
