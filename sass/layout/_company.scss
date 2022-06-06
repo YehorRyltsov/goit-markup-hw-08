@@ -1,5 +1,5 @@
 .company {
-  background: #f5f4fa;
+  background: #ffffff;
 }
 .company-box {
   padding-top: 60px;
@@ -10,13 +10,18 @@
   }
 }
 .company__title {
+  font-size: 28px;
+  line-height: 1.18;
   display: block;
   font-weight: 700;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+
   text-align: center;
   color: var(--header-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .company-list {
   display: flex;
@@ -25,7 +30,7 @@
   margin-bottom: -30px;
 
   flex-wrap: wrap;
-  padding: 0 15px;
+  // padding: 0 15px;
   // width: calc(100% / 2 - 30px);
 
   // @media screen and (min-width: 768px) {
@@ -35,7 +40,6 @@
 
   // }
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;
     width: 1200px;
   }
 }
@@ -67,26 +71,31 @@
 }
 .company-list__item {
   width: calc(100% / 2 - 30px);
-
-  margin: 15px;
   @media screen and (min-width: 768px) {
     width: calc(100% / 3 - 30px);
-    // margin-right: 30px;
   }
-  // @media screen and (min-width: 768px) {
-  //   .company-list__item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
+
   @media screen and (min-width: 1200px) {
     width: calc(100% / 6 - 30px);
   }
   height: 92px;
-
-  // @media screen and (min-width: 1200px) {
-  // }
+  margin-bottom: 30px;
 }
-
+@media screen and (max-width: 767px) {
+  .company-list__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .company-list__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 // .company-list__item:not(:last-child) {
 //   margin-right: 30px;
 // }
