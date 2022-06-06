@@ -576,6 +576,11 @@ body {
   padding-bottom: 32px;
 }
 
+.mob-menu-bottom {
+  width: 100%;
+  padding-left: 40px;
+}
+
 .mob-contacts-list__link {
   margin-bottom: 32px;
 }
@@ -604,8 +609,16 @@ body {
   margin-top: 32px;
 }
 
+.mob__list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.mob__list:not(:first-child) {
+  padding-left: 10px;
+}
+
 .mob-list__link {
-  padding-right: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
