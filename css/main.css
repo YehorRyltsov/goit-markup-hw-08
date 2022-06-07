@@ -95,7 +95,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
@@ -665,9 +671,10 @@ body {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.25)), url(../images/herobg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -701,13 +708,14 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-bottom: 94px;
   }
 }
 
 .hero-text {
-  height: 120px;
-  padding-top: 200px;
+  height: 100%;
 }
 
 .hero__title {
@@ -829,7 +837,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .about-list__title {
     text-align: start;
   }
@@ -913,7 +921,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .comand {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -974,12 +982,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .comand-top__title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -1061,7 +1070,7 @@ body {
   line-height: 1.18;
   display: block;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--header-color);
 }
@@ -1069,6 +1078,7 @@ body {
   .company__title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -1255,6 +1265,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
+    text-align: start;
     margin-top: 72px;
     margin-left: 70px;
     margin-right: 93px;
@@ -1436,7 +1447,7 @@ body {
 .herop-list {
   display: flex;
   justify-content: flex-start;
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
@@ -1444,10 +1455,12 @@ body {
 @media screen and (min-width: 768px) {
   .herop-list {
     justify-content: center;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .herop-list {
+    padding-top: 94px;
     padding-bottom: 50px;
   }
 }
@@ -1458,7 +1471,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .herop-button-item:not(:last-child) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1506,11 +1519,13 @@ body {
   .hero-portfolio-list {
     max-width: 768px;
     justify-content: flex-start;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-portfolio-list {
     max-width: 1200px;
+    margin-bottom: 64px;
   }
 }
 

@@ -19,14 +19,16 @@
 .herop-list {
   display: flex;
   justify-content: flex-start;
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 40px;
   flex-wrap: wrap;
   width: 100%;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 94px;
     padding-bottom: 50px;
   }
 }
@@ -34,7 +36,7 @@
   margin-right: 8px;
   margin-bottom: 15px;
   @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .herop-button {
@@ -80,9 +82,11 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     justify-content: flex-start;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    margin-bottom: 64px;
   }
 }
 

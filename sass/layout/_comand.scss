@@ -2,7 +2,7 @@
   background: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -56,10 +56,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 .comand-list__img {
